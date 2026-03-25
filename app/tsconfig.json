@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": ["dom","dom.iterable","esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -11,11 +11,12 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"],
-  "paths": {
-  "@/*": ["./*"]
-  }
+  "include": ["next-env.d.ts","**/*.ts","**/*.tsx"],
+  "exclude": ["node_modules"]
 }
